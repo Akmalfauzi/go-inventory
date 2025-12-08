@@ -1,0 +1,55 @@
+# --- Binaries & Build Output ---
+# Folder output build (jika ada)
+/bin/
+/dist/
+/build/
+
+# Binary spesifik project
+go-inventory
+go-inventory.exe
+main
+main.exe
+
+# Binary/Library umum
+*.exe
+*.dll
+*.so
+*.dylib
+*.test
+
+# --- Security & Config ---
+.env
+.env.*
+*.env
+
+# --- Go Specific ---
+# Folder vendor
+vendor/
+
+# Go Workspaces (Fitur baru Go)
+go.work
+go.work.sum
+
+# Test coverage profile
+coverage.out
+coverage.html
+profile.out
+
+# --- IDE & Editors ---
+# VS Code
+.vscode/
+!.vscode/extensions.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# JetBrains (GoLand)
+.idea/
+
+# Mac OS System Files
+.DS_Store
+
+# Windows System Files
+Thumbs.db
+
+# --- Docker ---
+docker-compose.override.yml
