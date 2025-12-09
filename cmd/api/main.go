@@ -53,6 +53,12 @@ func main() {
 	http.NewProductHandler(app, productUseCase)
 
 	// 5. Start
-	log.Println("🚀 Server running on port 3000")
-	log.Fatal(app.Listen(":3000"))
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "3000"
+	}
+
+	log.Printf("🚀 Server is starting on port: %s", port)
+
+	log.Fatal(app.Listen(":" + port))
 }
